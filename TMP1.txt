@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+actor клиент
+actor банк
+rectangle банкомат (
+ клиент -- (проверка баланса)
+ клиент -- (снятие наличных)
+ клиент -- (положить деньги на карту)
+ (снятие наличных) .> (проверка баланса) : extends
+ банк -- (проверить остатки наличных)
+)
+@enduml
