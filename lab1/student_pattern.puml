@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+class Студент{
+    +ФИО: string
+    +Дата рождения: datetime
+    +Группа: string
+    +Номер группы: string
+    +Номер телефона: integer
+    +Зачётная книжка : string
+    +Сдать экзамен()
+    +Прийти в вуз()
+}
+@enduml

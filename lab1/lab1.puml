@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+actor Деканат
+actor Студент
+rectangle Вуз{
+    (Введение успеваемости) -- Деканат
+    (Перевод с курса на курса) -- Студент
+    (Перевод с группы в группу) -- Студент
+    (Приём / отчисление студентов) -- Деканат
+}
+@enduml
