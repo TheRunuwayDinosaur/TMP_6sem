@@ -1,0 +1,32 @@
+@startuml
+left to right direction
+class Behaviour{
+    +get_result(int n)
+}
+
+class Fact{
+    +get_result(int n)
+}
+
+class Sum{
+    +get_result(int n)
+}
+
+class Matesha{
+    +get_result(Behaviour * b,int n)
+    +get_sin()
+    +get_cos()
+}
+
+class Matesha_2{
+    +get_sin()
+    +get_cos()
+    +calc_sin()
+    +calc_cos()
+}
+Matesha -> Behaviour
+Matesha_2 -> Behaviour
+Matesha -> Sum
+Matesha_2 -> Fact
+
+@enduml
