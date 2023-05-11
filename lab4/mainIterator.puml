@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+class MyStack{
+    +push()
+    +pop()
+}
+
+class MyStackIterator{
+    +operator++()
+    +operator*()
+    +operator()()
+}
+
+
+MyStack -> MyStackIterator
+MyStackIterator -> MyStack
+
+node operator{
+    node stack1{
+
+    }
+    node stack2{
+
+    }
+}
+
+operator -> MyStackIterator
+@enduml
